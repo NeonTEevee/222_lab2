@@ -5,11 +5,13 @@ using namespace std;
 
 int main ()
 {
-	int num[3], i, min = 1, mid = 1, max = 1, Amin, Bmid, Cmax;
+	int num[3], i, min, mid = 1, max = 1, Amin, Bmid, Cmax;
 	char order[3];
 	
 	cin >> num[0] >> num[1] >> num[2];
-	scanf("%s", order);
+	cin >> order;
+	
+	min = num[0];
 	
 	for(i=0; i<3; i++)
 	{
@@ -21,7 +23,7 @@ int main ()
 	
 	for(i=0; i<3; i++)
 	{
-		if(num[i] >= min && num[i] <= max)
+		if(num[i] > min && num[i] < max)
 			mid = num[i];
 	}
 	
