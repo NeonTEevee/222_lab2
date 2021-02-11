@@ -8,7 +8,9 @@ int main ()
 	scanf("%0.2f", &time);
 	
 	secs = time-floor(time);
+	printf("%f\n", secs);
 	mins = floor(time);
+	printf("%f\n", mins);
 	
 	if(promo == 'A')
 	{
