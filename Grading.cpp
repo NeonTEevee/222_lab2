@@ -18,6 +18,6 @@ int main ()
 		printf("D+");
 	if(sum >= 50 && sum <= 54)
 		printf("D");
-	if(sum < 50)
+	if(sum >= 0 && sum <= 49)
 		printf("F");
 }
