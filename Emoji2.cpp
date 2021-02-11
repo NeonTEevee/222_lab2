@@ -8,7 +8,8 @@ int main ()
 	
 	type = name;
 	diff = type - BDay;
-	if(diff%2 != 0)
+	printf("%d %d\n", diff, diff%2);
+	if(diff%2 == 1)
 	{
 		if(type >= 65 && type <= 73)
 		{
